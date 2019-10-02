@@ -1,0 +1,197 @@
+* {margin: 0; padding: 0; outline: 0;}
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800,900');
+/*font-family: 'Nunito Sans', sans-serif;*/
+
+body {
+	font-family: 'Nunito Sans', sans-serif;;
+	color: #e5e5e5;
+	font-size: 12px;
+	background:#bfbfbf;
+
+	
+}
+
+
+h1, h2, h3, h4, p {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+	margin:0 0 15px 0;
+}
+
+
+h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 100%;
+}
+
+
+h2 {
+	font-size: 24px;
+}
+
+
+p {
+	margin: 0 0 15px 0;
+}
+
+a {
+	color: #3e3e3e;
+}
+
+
+
+.clear {
+	clear: both;
+}
+.wrap {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+
+
+.section {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+
+
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Nunito Sans', sans-serif;;
+	font-weight: 300;
+}
+
+.inner:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+.logo img {width:50px; height:50px; background:rgba(102,102,102,1)}
+.inner h1 {margin-top:40px;}
+
+
+.subMenu {
+	height: 50px;
+	z-index: 1000;
+	width: 100%;
+	background:rgba(204,204,204,1);
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	
+	color: #fff;
+}
+.subMenu a:hover {
+	background:rgba(102,102,102,1);
+}
+
+.active {
+	background:#f96910 ;
+}
+.end {
+	margin: 0;
+}
+
+
+
+
+/* SECTIONS */
+.sTop {
+	min-height: 130px;
+	background:#fff;
+	color:#3d3d3d;
+	padding: 50px 0;
+	height: 300px;
+	
+}
+.sTop span {color:#f96910;}
+
+.s1 {height:700px;
+	background: rgba(204,204,204,1);
+	color:#fff;
+}
+
+.gall {width:180px; height:180px; background:#999; float:left; margin:0 10px 10px 0;}	
+
+
+
+
+.s2 {height:700px;
+	background: rgba(153,153,153,1);
+	color:#fff;
+}
+.s2 a {
+	color: #fff;
+}
+
+.s3 {height:700px;
+	background: rgba(204,204,204,1);
+	color:#fff;;
+}
+
+
+.s4 {height:700px;
+	background: rgba(204,204,204,1);
+	color:#fff;
+	border-top:1px solid white;
+}
+
+
+
+.s5 {height:300px;
+	background:rgba(231,231,231,1);
+	color: rgba(102,102,102,1);
+	border-top:1px solid white;
+}
+.s5 h2 {color:#f96910;}
+.s5 h3 {font-size:18px; color:rgba(46,46,46,.9); }
+.s5 h4 {font-size:14px; }
+
+
+.s6 {width:100%; height:160px; background:rgba(45,45,45,1);}
+.s6 p {font-family: 'Nunito Sans', sans-serif; font-weight: 300; font-size:13px; float:left; margin-top:60px;clear:both;}
+.text h3 {float:left; font-size:14px; font-family: 'Nunito Sans', sans-serif; font-weight: 300; line-height:30px;}
+
+.sns {width:30px; height:30px; float:right;  margin-top:55px;}
+.sns a {color:rgba(255,255,255,1);}
+.sns a:hover {color:#f96910;}
+.text {width:150px; height:40px; float:left;}
+
+#email_box {width:300px; height:30px; float:left;}
+#email_box input[type=text] {width:300px; height:30px; border:1px solid #202020; box-sizing:border-box; padding-left:10px; color:#888; text-transform:uppercase;/*uppercase 전부 대문자로 변환시키기*/ font-weight:bold; letter-spacing:2px; font-family: 'Nunito Sans', sans-serif; font-size:11px;}
+
+

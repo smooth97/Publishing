@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>주사위만들기</title>
+
+<style>
+* {margin:0; padding:0;}
+
+#box01 {width:300px; height:300px; background-color:rgba(255,102,0,1);
+border-radius:30px;}
+#box01_01 {width:80px; height:80px; background-color:rgba(0,0,0,1);
+border-radius:50%; position:absolute; left:110px; top:110px;}
+
+#box_02 {width:300px; height:300px; background-color: rgba(255,153,0,1);
+border-radius:30px; position:relative;}
+#box02_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box02_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+
+#box_03 {width:300px; height:300px; background-color: rgba(51,0,153,1);
+border-radius:30px; position:relative;}
+#box03_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box03_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:110px;}
+#box03_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+
+#box_04 {width:300px; height:300px; background-color: rgba(255,204,0,1);
+border-radius:30px; position:relative;}
+#box04_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box04_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box04_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box04_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+
+#box_05 {width:300px; height:300px; background-color: rgba(51,153,0,1);
+border-radius:30px; position:relative;}
+#box05_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box05_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box05_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box05_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+#box05_05 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:110px;}
+
+#box_06 {width:300px; height:300px; background-color: rgba(0,102,153,1);
+border-radius:30px; position:relative;}
+#box06_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box06_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box06_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box06_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+#box06_05 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:110px;}
+#box06_06 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:110px;}
+
+#box_07 {width:300px; height:300px; background-color: rgba(0,153,204,1);
+border-radius:30px; position:relative;}
+#box07_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box07_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box07_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box07_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+#box07_05 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:110px;}
+#box07_06 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:110px;}
+#box07_07 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:110px;}
+
+#box_08 {width:300px; height:300px; background-color: rgba(0,204,255,1);
+border-radius:30px; position:relative;}
+#box08_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box08_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box08_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box08_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+#box08_05 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:110px;}
+#box08_06 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:110px;}
+#box08_07 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; top:15px;}
+#box08_08 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:15px;}
+
+#box_09 {width:300px; height:300px; background-color: rgba(0,255,204,1);
+border-radius:30px; position:relative;}
+#box09_01 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:15px;}
+#box09_02 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; bottom:15px;}
+#box09_03 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; bottom:15px;}
+#box09_04 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:15px;}
+#box09_05 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:15px; top:110px;}
+#box09_06 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; left:15px; top:110px;}
+#box09_07 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; top:15px;}
+#box09_08 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:15px;}
+#box09_09 {width:80px; height:80px; background-color: rgba(0,0,0,1);
+border-radius:40px; position:absolute; right:110px; bottom:110px;}
+
+</style>
+
+</head>
+
+<body>
+<div id="box01">
+	<div id="box01_01"></div>
+</div>
+
+<div id="box_02">
+	<div id="box02_01"></div>
+    <div id="box02_02"></div>
+</div>
+
+<div id="box_03">
+	<div id="box03_01"></div>
+    <div id="box03_02"></div>
+    <div id="box03_03"></div>
+</div>
+
+<div id="box_04">
+	<div id="box04_01"></div>
+    <div id="box04_02"></div>
+    <div id="box04_03"></div>
+    <div id="box04_04"></div>
+</div>
+
+<div id="box_05">
+	<div id="box05_01"></div>
+    <div id="box05_02"></div>
+    <div id="box05_03"></div>
+    <div id="box05_04"></div>
+    <div id="box05_05"></div>
+</div>
+
+<div id="box_06">
+	<div id="box06_01"></div>
+    <div id="box06_02"></div>
+    <div id="box06_03"></div>
+    <div id="box06_04"></div>
+    <div id="box06_05"></div>
+    <div id="box06_06"></div>
+</div>
+
+<div id="box_07">
+	<div id="box07_01"></div>
+    <div id="box07_02"></div>
+    <div id="box07_03"></div>
+    <div id="box07_04"></div>
+    <div id="box07_05"></div>
+    <div id="box07_06"></div>
+    <div id="box07_07"></div>
+</div>
+
+<div id="box_08">
+	<div id="box08_01"></div>
+    <div id="box08_02"></div>
+    <div id="box08_03"></div>
+    <div id="box08_04"></div>
+    <div id="box08_05"></div>
+    <div id="box08_06"></div>
+    <div id="box08_07"></div>
+    <div id="box08_08"></div>
+</div>
+
+<div id="box_09">
+	<div id="box09_01"></div>
+    <div id="box09_02"></div>
+    <div id="box09_03"></div>
+    <div id="box09_04"></div>
+    <div id="box09_05"></div>
+    <div id="box09_06"></div>
+    <div id="box09_07"></div>
+    <div id="box09_08"></div>
+    <div id="box09_09"></div>
+</div>
+</body>
+</html>

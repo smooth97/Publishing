@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>시맨틱태그가 적용된 레이아웃</title>
+
+<style>
+* {margin:0; padding:0;}
+
+#wrap {width:960px; height:1000px; background:rgba(0,0,0,.1); margin:auto;}
+header {width:300px; height:200px; background:rgba(255,0,0,.5); margin:auto; text-align:center;}
+nav {width:960px; height:50px; background:rgba(0,255,0,.5);}
+nav>ul {list-style:none;}
+nav>ul>li {width:120px; height:50px; background:rgba(0,0,0,.1); float:left;}
+#box03 {width:960px; height:400px; background:rgba(0,0,255,.5);}
+#box04 {width:960px; height:300px; background:rgba(255,255,0,.5);}
+article {width:480px; height:300px; background:rgba(0,0,0,.1); float:left;}
+footer {width:960px; height:50px; background:rgba(0,255,255,1);}
+
+</style>
+</head>
+
+<body>
+<!-- 전체를 감싸는 wrap(wrapper)은 굉장히 많이 사용되는 단어임에도 불구하고 아직 시맨틱태그가
+아닙니다. 시맨틱태그의 결정(모든 태그의 결정)은 W3C에서 합니다. 결정이 되면 사용하시기 바랍니다. -->
+<div id="wrap">
+	<header>LOGO</header>
+    <nav>
+    	<ul>
+        	<li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+        </ul>
+    </nav>
+    <section id="box03">내용</section>
+    <section id="box04">
+    	<article>배너01</article>
+        <article>배너02</article>		
+    </section>
+    <footer>하단내용</footer>
+
+</div>
+</body>
+</html>

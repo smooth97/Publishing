@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+#wrap {width:800px; height:600px; background-color:lightgray; position:relative; margin:0 auto;}
+
+#one {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:0; left:200px;}
+#one_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:80px; left:80px;}
+
+#two {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:200px; left:0px;}
+#two_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; left:20px;}
+#two_02 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; right:20px;}
+
+#three {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:200px; left:200px;}
+#three_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; left:20px;}
+#three_02 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; right:20px;}
+#three_03 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:80px; right:80px;}
+
+#four {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:200px; left:600px;}
+#four_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; left:20px;}
+#four_02 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; right:20px;}
+#four_03 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; right:20px;}
+#four_04 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; left:20px;}
+
+#five {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:200px; left:400px;}
+#five_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; left:20px;}
+#five_02 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; right:20px;}
+#five_03 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; right:20px;}
+#five_04 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; left:20px;}
+#five_05 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:80px; left:80px;}
+
+#six {width:200px; height:200px; background-color:white; border-radius:20px;
+position:absolute; top:400px; left:200px;}
+#six_01 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; left:20px;}
+#six_02 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; right:20px;}
+#six_03 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; top:20px; right:20px;}
+#six_04 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:20px; left:20px;}
+#six_05 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:80px; right:20px;}
+#six_06 {width:40px; height:40px; background-color:black; border-radius:50px;
+position:absolute; bottom:80px; left:20px;}
+
+

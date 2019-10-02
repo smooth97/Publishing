@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>앵커태그 (링크) p.67~69 / 이미지태그 p.84~86</title>
+
+</head>
+
+
+<body>
+
+<h1>택스트를 이용한 링크</h1>
+<a href="http://naver.com">네이버</a> <a href="http://daum.net">다음</a> <a href="http://nate.com">네이트</a> <a href="http://google.com">구글</a>
+
+<h1>이미지를 이용한 링크</h1>
+<a href="http://naver.com"><img src="images/button_01.jpg" width="100" height="50"></a><br>
+<a href="http://daum.net"><img src='images/button_02.jpg'></a><br>
+<a href="http://nate.com"><img src='images/button_03.jpg' width="600" height="50"></a><br>
+<a href="http://google.com"><img src='images/button_04.jpg' width="100%" height="50"></a>
+
+<h1>이미지태그<h1/>
+<img src="Penguins.jpg" alt="펭귄세마리" title="펭귄 세마리가 잘 놀고 있음">
+<img src="펭귄들.jpg" alt="펭귄세마리">
+<img src="https://ssl.pstatic.net/tveta/libs/1197/1197976/98e7dd5076fef6acc2f4_20180726143941491_1.jpg">
+
+<!--
+1. img 태그에 쓰이는 속성 중 src(source의 약자) , 주소 또는 경로)에는 상대경로/절대경로가 있습니다.
+상대경로 : 현재파일(페이지)이 속해있는 위치를 기준으로 적어주는 경로(../는 한 단계 상위 폴더를 의미)
+절대경로 : 현재파일(페이지)이 속해있는 위치와는 상관없이 이미지가 위치한 주소를 전부 다
+(http://~~~.jpg) 적어주는 경로
+★ 상대경로와 절대경로는 이미지에만 국한된 것이 아닙니다. 모든 파일에는 경로가 있습니다.
+
+2. img 태그에 쓰이는 속성 중 alt 속성은 이미지가 나타나지 않을 때 (ex:경로가 틀린 경우 등) 이미지 대신
+그 자리에 나타내주는 글입니다. 웹접근성을 기반으로 모든 이미지에 alt 속성을 입력해주라는 w3c 웹표준 지침이 있습니다.
+그러나 없다고 해서 크게 문제되지는 않습니다.
+
+3. img 태그 속성 중 width와 heihgt 값은 이미지의 너비, 높이를 지정해주는 속성입니다. 현재는 CSS로 조절하므로
+이미지 태그 안에 직접 값을 잘 입력하지 않습니다. 단 , 강제로 이미지의 사이즈를 줄이거나 늘릴 수 있습니다. 이미지의 비율이 깨질 수있으니 주의.
+픽셀의 단위를 넣지 않습니다.
+
+4. img 태그 속성 중 title 속성은 이미지의 제목을 뜻하는 부분이며, 마우스를 이미지에 1초 정도 올리고있으면 나타납니다.
+-->
+
+<h1>이미지맵을 이용한 링크</h1>
+<img src="button.jpg" usemap="#Map">
+<map name="Map">
+  <area shape="rect" coords="14,12,85,40" href="http://naver.com">
+  <area shape="circle" coords="148,27,24" href="#">
+  <area shape="poly" coords="244,6,206,36,288,39" href="#">
+  <area shape="poly" coords="350,3,341,13,322,14,331,29,337,45,364,41,381,44,369,25,369,8,350,6" href="#">
+</map>
+
+</body>
+
+
+</html>

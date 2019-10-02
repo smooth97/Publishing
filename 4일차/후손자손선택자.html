@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>후손선택자와 자손선택자 p.143~149</title>
+
+<style>
+
+/* #header라는 아이디를 가지고 있는 선택자의 '자손' 중 h1을 선택 , 글자를 빨갛게 */
+#header>h1 {color:red;}
+
+/* #header라는 아이디를 가지고 있는 선택자의 자손 중 div를 선택하고 그 div의 자손 중 h1을 선택, 글자를 파랗게 */
+#header>div>h1 {color:blue;}
+
+/* #section이라는 아이디를 가지고 있는 선택자의 후손 중 h2를 선택, 배경색을 노란색으로 */
+#section h2 {background-color:yellow;}
+
+/* .text를 '자손선택자'를 사용하여 글자 크기를 12px로 변경해보세요.(font-size) */
+#article>.text {font-size:12px;}
+
+</style>
+
+
+</head>
+
+<body>
+<div id="header">
+	<h1>웹퍼블리셔 양성</h1>
+    <div>
+    	<h1>4일차</h1>
+    </div>
+<div id="section">
+	<h2>후손선택자와 자손선택자</h2>
+    <div id="article">
+    	<h2 class="text">후손선택자와 자손선택자의 차이를 설명하고 있습니다.</h2>
+    </div>
+</div>
+    
+
+
+
+</body>
+</html>

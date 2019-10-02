@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>스타일시트의 종류</title>
+</head>
+
+<body>
+<table width="900" border="1" align="center" cellpadding="10">
+  <tr>
+    <td width="300" height="200">Style Sheet</td>
+    <td height="200" colspan="2">스타일시트의 내용이 어느곳에 위치하느냐에 따른 분류</td>
+  </tr>
+  <tr>
+    <td width="300" height="200"><p>인라인 스타일시트<br>
+      (Inline Style Sheet)<br>
+    </p></td>
+    <td width="300" height="200">내부 스타일시트<br>
+    (Internal Style Sheet)</td>
+    <td width="300" height="200"><p>외부 스타일시트<br>
+      (External Style Sheet)
+    </p></td>
+  </tr>
+  <tr>
+    <td width="300" height="200"><p>태그에 직접 스타일을 지정한다.<br>
+    예시 : &lt;div style=&quot;color:red&quot;;&gt;</p></td>
+    <td width="300" height="200"><p>&lt;head&gt;&lt;/head&gt;안에<br>
+      &lt;style&gt;&lt;/style&gt;을 사용하여<br>
+      지정한다.<br>
+    </p></td>
+    <td width="300" height="200"><p>&lt;head&gt;&lt;/head&gt;안에 &lt;link&gt;를 사용하여 외부에 있는 스타일시트 파일을 연결하여 사용한다.<br>
+      [사용법]<br>
+      &lt;link href=&quot;스타일시트의경로.css&quot; rel=&quot;stylesheet&quot;<br>
+    type=&quot;text/css&gt;</p></td>
+  </tr>
+  <tr>
+    <td width="300" height="200">HTML과 섞여있으므로 인라인 스타일을 많이 작성할 경우 나중에 오느 위치에 어떤 스타일이 적용되었는지 찾기 어렵고, 하나하나 수정을 해주어야 하기 때문에 가급적 사용을 자제하는 것이 좋다.</td>
+    <td width="300" height="200">HTML 문서 안에 위치하므로 영향을 주는 범위는 페이지 내의 전체 태그이며, 다른 HTML문서에 똑같은 내용을 적용하고 싶다면 복사해서 사용이 가능하다.</td>
+    <td width="300" height="200">하나의 스타일로 여러개의 HTML문서에 적용하여 사용하고자 할때 편리핟. 하나의 스타일시트 내용만 바꾸면 연결되어있는 모든 HTML 문서가 수정되므로 유지/보수에 편리하다. 공통되는 부분은 함께 사용하되, 다른 부분은 id나 class명이 겹치지 않게 주의해야 한다.</td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>

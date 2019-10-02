@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>패딩(padding) p.191~193</title>
+
+<style>
+* {margin:0;}
+
+/* 기본적으로 상자 안에서의 글자는(또는 요소)는 왼쪽 상단에 붙습니다.
+패딩은 마진과 사용방법은 같으나(auto제외/안쪽 요소의 가운데 정렬을 원할 경우 text-align:center;를 이용 하거나
+안쪽 요소에 margin:auto;를 이용하면 됩니다.) 넣은 만큼 박스의 너비(높이)가 늘어나기 때문에
+너비(높이)값이서 늘어난 공간만큼 빼줘야 합니다. */
+div {width:200px; height:200px; background:rgba(0,0,0,.1); margin-bottom:10px;}
+
+/* 상단에서 글자를 50px만큼 띄울 경우, 높이값에서 늘어난 공간만큼(50px) 빼준다. */
+#box01 {padding:50px 0 0; height:150px;}
+
+/* 좌측에서 글자를 25px만큼 띄울 경우, 너비값에서 늘어난 공간만큼(25px) 빼준다. */
+#box02 {padding:0 0 0 25px; width:175px;}
+
+/* 상단에서 글자를 25px만큼 띄우고, 좌측에서 글자를 25px만큼 띄울 경우 */
+#box03 {padding:75px 0 0 25px; height:125px; width:175px} 
+
+/* 상단, 하단에서 25px만큼 띄우고, 좌측에서 50px만큼 박스안에 여백넣기 */
+/* overflow:hidden; 속성은 흘러 넘치는 것을 가려줌.
+   overflow:scroll; 속성은 흘러 넘치는 것을 스크롤로 나타냄 */
+#box04 {padding:25px 0 25px 50px; width:150px; height:150px; overflow-y:scroll;}
+
+/* box-sizing:content-box; 패딩, 보더(테두리)값이 박스의 안쪽으로 들어가면서 박스 크기 늘어남. 기본값입니다. 
+   box-sizing:border-box;  패딩, 보더(테두리)값이 박스에 안쪽으로 들어가나 박스의 크기를 자동계산해서 빼주기 때문에
+   박스의 크기가 늘어나지 않고 유지됩니다. 따라서 이 속성을 사용한다면 늘어난만큼 빼주지 않아도 됩니다.
+   IE8버전 이하에서는 적용되지 않는 CSS3 속성이므로 주의해서 사용하시기 바랍니다. p.194~196 */
+#box05 {padding:10px; border:10px solid black; box-sizing:content-box;}
+#box06 {padding:10px; border:10px solid black; box-sizing:border-box;}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="box01">padding</div>
+<div id="box02">padding</div>
+<div id="box03">padding</div>
+<div id="box04">이번에는 줄이 여러줄인 문장을 작성해보겠습니다.이번에는 줄이 여러줄인 문장을 작성해보겠습니다.이번에는 줄이 여러줄인 문장을 작성해보겠습니다.이번에는 줄이 여러줄인 문장을 작성해보겠습니다.이번에는 줄이 여러줄인 문장을 작성해보겠습니다.</div>
+<div id="box05">content-box</div>
+<div id="box06">border-box</div>
+
+</body>
+</html>

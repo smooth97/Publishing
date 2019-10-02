@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>시맨틱태그가 적용되지 않은 레이아웃</title>
+
+<style>
+* {margin:0; padding:0;}
+
+#wrap {width:960px; height:1000px; background:rgba(0,0,0,.1); margin:auto;}
+#box01 {width:300px; height:200px; background:rgba(255,0,0,.5); margin:auto; text-align:center;}
+#box02 {width:960px; height:50px; background:rgba(0,255,0,.5);}
+#box02>ul {list-style:none;}
+#box02>ul>li {width:120px; height:50px; background:rgba(0,0,0,.1); float:left;}
+#box03 {width:960px; height:400px; background:rgba(0,0,255,.5);}
+#box04 {width:960px; height:300px; background:rgba(255,255,0,.5);}
+.box04_01 {width:480px; height:300px; background:rgba(0,0,0,.1); float:left;}
+#box05 {width:960px; height:50px; background:rgba(0,255,255,1);}
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="box01">LOGO</div>
+    <div id="box02">
+    	<ul>
+        	<li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+            <li>button</li>
+        </ul>
+    </div>
+    <div id="box03">내용</div>
+    <div id="box04">
+    	<div class="box04_01">배너01</div>
+        <div class="box04_01">배너02</div>		
+    </div>
+    <div id="box05">하단내용</div>
+
+</div>
+</body>
+</html>

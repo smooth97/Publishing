@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>float 속성 p.237~247</title>
+<style>
+
+* {margin:0; padding:0;}
+div {width:100px; height:100px}
+/* block 속성을 가지고 있는 div 박스를 가로로 정렬할 때 float:left; 속성을 사용합니다. */
+#box01 {background:rgba(255,0,0,.5); float:left;}
+#box02 {background:rgba(0,255,0,.5); float:left;}
+#box03 {background:rgba(0,0,255,.5); float:left;}
+/* float:left; 속성을 가지고 있는 박스 바로 뒤에 오는 박스에 clear:both; 속성을 입력해 float 속성을 해제해줍니다.
+(밑으로 깔려 들어가서 겹치지 않게) 
+float:right; 속성은 화면의 우측에 박스를 정렬할 수 있지만 순서가 뒤바뀝니다. (오른쪽순으로 붙기 때문) */
+#box04 {background:rgba(255,255,0,.5); /*0clear:both;*/ float:right;}
+#box05 {background:rgba(0,255,255,.5); float:right;}
+#box06 {background:rgba(255,0,255,.5); float:right;}
+#right {width:300px; height:100px; background: rgba(0,0,0,.5); float:right;}
+#box07 {background:rgba(255,255,0,.5); float:left;}
+#box08 {background:rgba(0,255,255,.5); float:left;}
+#box09 {background:rgba(255,0,255,.5); float:left;}
+
+
+</style>
+</head>
+
+<body>
+<div id="box01">01번 박스</div>
+<div id="box02">02번 박스</div>
+<div id="box03">03번 박스</div>
+<div id="box04">04번 박스</div>
+<div id="box05">05번 박스</div>
+<div id="box06">06번 박스</div>
+<div id="right">
+	<div id="box07">07번 박스</div>
+    <div id="box08">08번 박스</div>
+    <div id="box09">09번 박스</div>
+</div>
+</body>
+</html>

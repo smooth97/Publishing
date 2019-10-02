@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>제이쿼리 연습</title>
+<meta name="viewport" content="width=device-width">
+<link href="css/demo.css" rel="stylesheet" type="text/css"><!--SMINT 제이쿼리 CSS파일-->
+<link href="css/lightbox.css" rel="stylesheet" type="text/css"><!--라이트박스 제이쿼리 CSS파일-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--제이쿼리 라이브러리 3.1.1버전-->
+<script type="text/javascript" src="js/jquery.min.js"></script><!--제이쿼리를 실행하기 위해 꼭 필요한 제이쿼리 라이브러리 파일 1.7.1버전-->
+<script type="text/javascript" src="js/jquery.smint.js"></script><!--SMINT 제이쿼리 js파일-->
+<script type="text/javascript" src="js/lightbox.min.js"></script><!--라이트박스 제이쿼리 js파일-->
+<script type="text/javascript">
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 500
+    });
+});
+</script><!--SMINT 제이쿼리 실행 스크립트-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"><!--BX슬라이더 CSS파일-->
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script><!--BX슬라이더 js파일-->
+<script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+</script>
+</head>
+<body>
+<div class="wrap">
+	<div class="section sTop">
+		<div class="inner">
+			<h1 class="title">SMINT 연습용 페이지</h1>
+			<h2 class="subtitle">제이쿼리 연습</h2>
+		</div>
+	</div>
+	<div class="subMenu" >
+	 	<div class="inner">
+	 		<a href="#sTop" class="subNavBtn">Home</a>
+	 		<a href="#s1" class="subNavBtn">라이트박스</a> 
+			<a href="#s2" class="subNavBtn">BX슬라이더</a>
+			<a href="#s3" class="subNavBtn">구글지도</a>
+			<a href="#s4" class="subNavBtn">다음지도</a>
+			<a href="#s5" class="subNavBtn">유튜브</a>
+			<a href="https://twitter.com/rabmyself" class="subNavBtn extLink end">External Link</a>
+		</div>
+	</div>
+	<div class="section s1">
+		<div class="inner ">
+			<h1>라이트박스</h1>
+            <div class="gall">
+            	<a href="img/gallery_01.jpg" data-lightbox="image-1" data-title="고양이">
+                	<img src="img/gallery_s_01.jpg" alt="고양이">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_02.jpg" data-lightbox="image-1" data-title="골든리트리버">
+                	<img src="img/gallery_s_02.jpg" alt="골든리트리버">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_03.jpg" data-lightbox="image-1" data-title="상근이">
+                	<img src="img/gallery_s_03.jpg" alt="상근이">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_04.jpg" data-lightbox="image-1" data-title="진돗개">
+                	<img src="img/gallery_s_04.jpg" alt="진돗개">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_05.jpg" data-lightbox="image-1" data-title="냥이들">
+                	<img src="img/gallery_s_05.jpg" alt="냥이들">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_06.jpg" data-lightbox="image-1" data-title="사자">
+                	<img src="img/gallery_s_06.jpg" alt="사자">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_07.jpg" data-lightbox="image-1" data-title="강아지">
+                	<img src="img/gallery_s_07.jpg" alt="강아지">
+                </a>
+            </div>
+            <div class="gall">
+            	<a href="img/gallery_08.jpg" data-lightbox="image-1" data-title="강아지">
+                	<img src="img/gallery_s_08.jpg" alt="강아지">
+                </a>
+            </div>
+		</div>
+	</div>
+	<div class="section s2">
+		<div class="inner">
+			<h1>Section 2</h1>
+			<div class="slider">
+				<div>I am a slide.</div>
+				<div>I am another slide.</div>
+			</div>
+		</div>
+	</div>
+	<div class="section s3">
+		<div class="inner">
+			<h1>Section 3</h1>
+		</div>
+	</div>
+	<div class="section s4">
+		<div class="inner">
+			<h1>Section 4</h1>
+		</div>
+	</div>
+	<div class="section s5">
+		<div class="inner">
+			<h1>Section 5</h1>
+		</div>
+	</div>
+</div>
+</body>
+</html>
